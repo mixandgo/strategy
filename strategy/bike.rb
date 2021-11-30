@@ -5,7 +5,7 @@ module Strategy
     ERROR_CORRECTION = 5
 
     def calculate_route(source, destination)
-      [source.length, source.length].inject(&squared) + ERROR_CORRECTION
+      [source.length, destination.length].inject(&squared) + ERROR_CORRECTION
     end
 
   private
